@@ -10,12 +10,6 @@ Specifically, we aim to identify the most effective loss function for accurately
 and Intersection over Union (IOU), we seek to identify the optimal approach to enhance the precision and reliability of the segmentation process, ultimately contributing to the safe operation of nuclear reactors and materials.
 
 Some highlights of the results using this code from the paper mentioned above:
-WBCE showed some issues with mask overlap and inaccuracies. Dice loss function outperformed others, achieving the highest precision, recall, IOU, and F1-score. However, Distance map-based loss function (DML) showed higher promise in improving object detection performance especially at the boundaries and created more precise masks, closely matching voids or bubbles.
+WBCE showed some issues with mask overlap and inaccuracies. Dice loss function outperformed others, achieving the highest precision, recall, IOU, and F1-score. However, Distance map-based loss function (DML) showed higher promise in improving object detection performance especially at the boundaries and created more precise masks, closely matching voids or bubbles. Please refer to the above paper for more details.
 
-Table 1: Performance metrics per pixel at the 0.5 threshold for different loss functions.            
-Loss functions	Precision	Recall	Accuracy	F1-score	IOU	Mean Area Error	Mean Absolute Area Error
-IOU	0.843	0.874	0.952	0.858	0.752	0.041	0.085
-Dice	0.865	0.883	0.958	0.874	0.776	0.025	0.077
-WBCE	0.805	0.926	0.951	0.861	0.757	0.153	0.157
-BCE	0.871	0.864	0.956	0.868	0.766	-0.006	0.063
-Distance	0.881	0.850	0.956	0.865	0.763	-0.032	0.072
+
